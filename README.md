@@ -1,4 +1,3 @@
-Here's a sample `README.md` file for your **Pizza Booking App** project, formatted in Markdown and suitable for GitHub or other documentation platforms:
 
 ---
 
