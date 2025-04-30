@@ -1,0 +1,303 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Pizza Booking App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        <i class="fas fa-pizza-slice me-2"></i>Pizza Booking
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#booking-section">Book Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#orders-section">My Orders</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-danger text-white text-center py-5">
+    <h1 class="display-4 fw-bold">Delicious Pizza Delivered To You</h1>
+    <p class="lead">Choose your favorite pizza and book your order now!</p>
+  </header>
+
+  <main class="container my-5">
+    <section class="mb-5" id="menu-section">
+      <h2 class="mb-4 text-center fw-bold">Our Menu</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://storage.googleapis.com/a1aa/image/30cd2176-0060-4e50-601c-74c7cf74411c.jpg"
+              alt="Margherita pizza with fresh basil leaves, mozzarella cheese, and tomato sauce on a wooden table"
+              class="card-img-top"
+              height="300"
+              width="400"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Margherita Pizza</h5>
+              <p class="card-text">Classic pizza with fresh mozzarella, tomato sauce, and basil.</p>
+              <p class="fw-bold">$8.99</p>
+              <button class="btn btn-danger w-100 add-to-cart-btn" data-name="Margherita Pizza" data-price="8.99">
+                <i class="fas fa-cart-plus me-2"></i>Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://storage.googleapis.com/a1aa/image/28d90f80-5359-4c04-8f6b-96b73392bae4.jpg"
+              alt="Pepperoni pizza with melted cheese and spicy pepperoni slices on a rustic wooden table"
+              class="card-img-top"
+              height="300"
+              width="400"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pepperoni Pizza</h5>
+              <p class="card-text">Loaded with spicy pepperoni and mozzarella cheese.</p>
+              <p class="fw-bold">$10.99</p>
+              <button class="btn btn-danger w-100 add-to-cart-btn" data-name="Pepperoni Pizza" data-price="10.99">
+                <i class="fas fa-cart-plus me-2"></i>Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://storage.googleapis.com/a1aa/image/3fb01921-61b7-470f-dff9-cb19e75f5b6a.jpg"
+              alt="Veggie pizza topped with bell peppers, olives, onions, mushrooms, and melted cheese on a wooden board"
+              class="card-img-top"
+              height="300"
+              width="400"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Veggie Pizza</h5>
+              <p class="card-text">A colorful mix of fresh vegetables and mozzarella cheese.</p>
+              <p class="fw-bold">$9.99</p>
+              <button class="btn btn-danger w-100 add-to-cart-btn" data-name="Veggie Pizza" data-price="9.99">
+                <i class="fas fa-cart-plus me-2"></i>Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://storage.googleapis.com/a1aa/image/10c964a2-299c-469a-56a0-b5fbd729eddf.jpg"
+              alt="BBQ chicken pizza with barbecue sauce, grilled chicken pieces, red onions, and melted cheese on a wooden table"
+              class="card-img-top"
+              height="300"
+              width="400"
+            />
+            <div class="card-body">
+              <h5 class="card-title">BBQ Chicken Pizza</h5>
+              <p class="card-text">Grilled chicken with tangy BBQ sauce and red onions.</p>
+              <p class="fw-bold">$11.99</p>
+              <button class="btn btn-danger w-100 add-to-cart-btn" data-name="BBQ Chicken Pizza" data-price="11.99">
+                <i class="fas fa-cart-plus me-2"></i>Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://storage.googleapis.com/a1aa/image/f68cc59e-b3f7-49e9-ae29-1520e749beb4.jpg"
+              alt="Hawaiian pizza with ham, pineapple chunks, and melted cheese on a wooden table"
+              class="card-img-top"
+              height="300"
+              width="400"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Hawaiian Pizza</h5>
+              <p class="card-text">Sweet pineapple and savory ham with mozzarella cheese.</p>
+              <p class="fw-bold">$10.49</p>
+              <button class="btn btn-danger w-100 add-to-cart-btn" data-name="Hawaiian Pizza" data-price="10.49">
+                <i class="fas fa-cart-plus me-2"></i>Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="https://storage.googleapis.com/a1aa/image/9882cb25-4ed3-488f-5e73-86420c6008e6.jpg"
+              alt="Four cheese pizza with mozzarella, parmesan, gorgonzola, and ricotta cheeses melted on a crispy crust"
+              class="card-img-top"
+              height="300"
+              width="400"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Four Cheese Pizza</h5>
+              <p class="card-text">A rich blend of four delicious cheeses on a crispy crust.</p>
+              <p class="fw-bold">$12.49</p>
+              <button class="btn btn-danger w-100 add-to-cart-btn" data-name="Four Cheese Pizza" data-price="12.49">
+                <i class="fas fa-cart-plus me-2"></i>Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5" id="booking-section">
+      <h2 class="mb-4 text-center fw-bold">Book Your Pizza</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <form class="border p-4 rounded shadow-sm bg-light" id="booking-form">
+            <div class="mb-3">
+              <label for="customerName" class="form-label fw-semibold">Name</label>
+              <input type="text" class="form-control" id="customerName" placeholder="Your full name" required />
+            </div>
+            <div class="mb-3">
+              <label for="customerEmail" class="form-label fw-semibold">Email</label>
+              <input type="email" class="form-control" id="customerEmail" placeholder="name@example.com" required />
+            </div>
+            <div class="mb-3">
+              <label for="customerPhone" class="form-label fw-semibold">Phone Number</label>
+              <input type="tel" class="form-control" id="customerPhone" placeholder="+1 234 567 8900" required />
+            </div>
+            <div class="mb-3">
+              <label for="pizzaSelect" class="form-label fw-semibold">Select Pizza</label>
+              <select class="form-select" id="pizzaSelect" required>
+                <option value="" disabled selected>Choose a pizza</option>
+                <option data-price="8.99" value="Margherita Pizza">Margherita Pizza - $8.99</option>
+                <option data-price="10.99" value="Pepperoni Pizza">Pepperoni Pizza - $10.99</option>
+                <option data-price="9.99" value="Veggie Pizza">Veggie Pizza - $9.99</option>
+                <option data-price="11.99" value="BBQ Chicken Pizza">BBQ Chicken Pizza - $11.99</option>
+                <option data-price="10.49" value="Hawaiian Pizza">Hawaiian Pizza - $10.49</option>
+                <option data-price="12.49" value="Four Cheese Pizza">Four Cheese Pizza - $12.49</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="quantity" class="form-label fw-semibold">Quantity</label>
+              <input type="number" class="form-control" id="quantity" min="1" value="1" required />
+            </div>
+            <div class="mb-3">
+              <label for="deliveryAddress" class="form-label fw-semibold">Delivery Address</label>
+              <textarea class="form-control" id="deliveryAddress" rows="3" placeholder="Your address" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger w-100 fw-semibold">
+              <i class="fas fa-check-circle me-2"></i>Confirm Booking
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5" id="orders-section">
+      <h2 class="mb-4 text-center fw-bold">My Orders</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+          <div class="list-group shadow-sm" id="orders-list">
+            <p class="text-center text-muted fst-italic">No orders yet. Book your pizza above!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-danger text-white text-center py-3">
+    <p class="mb-0">© 2024 Pizza Booking App. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const bookingForm = document.getElementById('booking-form');
+    const ordersList = document.getElementById('orders-list');
+
+    function createOrderItem(order) {
+      const item = document.createElement('div');
+      item.className = 'list-group-item list-group-item-action flex-column align-items-start';
+
+      const header = document.createElement('div');
+      header.className = 'd-flex w-100 justify-content-between';
+
+      const title = document.createElement('h5');
+      title.className = 'mb-1';
+      title.textContent = order.pizza + ' x ' + order.quantity;
+
+      const price = document.createElement('small');
+      price.className = 'text-danger fw-bold';
+      price.textContent = '$' + (order.price * order.quantity).toFixed(2);
+
+      header.appendChild(title);
+      header.appendChild(price);
+
+      const details = document.createElement('p');
+      details.className = 'mb-1';
+      details.textContent = Name: ${order.name} | Phone: ${order.phone};
+
+      const email = document.createElement('small');
+      email.className = 'text-muted d-block mb-1';
+      email.textContent = Email: ${order.email};
+
+      const address = document.createElement('small');
+      address.className = 'text-muted d-block';
+      address.textContent = Delivery Address: ${order.address};
+
+      item.appendChild(header);
+      item.appendChild(details);
+      item.appendChild(email);
+      item.appendChild(address);
+
+      return item;
+    }
+
+    bookingForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById('customerName').value.trim();
+      const email = document.getElementById('customerEmail').value.trim();
+      const phone = document.getElementById('customerPhone').value.trim();
+      const pizzaSelect = document.getElementById('pizzaSelect');
+      const pizza = pizzaSelect.value;
+      const price = parseFloat(pizzaSelect.options[pizzaSelect.selectedIndex].dataset.price);
+      const quantity = parseInt(document.getElementById('quantity').value);
+      const address = document.getElementById('deliveryAddress').value.trim();
+
+      if (!name || !email || !phone || !pizza || !quantity || !address) {
+        alert('Please fill in all fields.');
+        return;
+      }
+
+      const order = { name, email, phone, pizza, price, quantity, address };
+
+      if (ordersList.children.length === 1 && ordersList.children[0].tagName === 'P') {
+        ordersList.innerHTML = '';
+      }
+
+      const orderItem = createOrderItem(order);
+      ordersList.appendChild(orderItem);
+
+      bookingForm.reset();
+      pizzaSelect.selectedIndex = 0;
+    });
+  </script>
+</body>
+</html>
